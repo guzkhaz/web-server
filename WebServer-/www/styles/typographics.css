@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-Thin.ttf");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-Black.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-BlackItalic.ttf");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-Heavy.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-ExtraBoldItalic.ttf");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-Book.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-ThinItalic.ttf");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-SemiBoldItalic.ttf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-BookItalic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-ExtraBold.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Axiforma;
+    src: url("/fonts/static/Axiforma-HeavyItalic.ttf");
+    font-weight: 900;
+    font-style: italic;
+}
+

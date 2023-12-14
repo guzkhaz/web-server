@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форум</title>
+    <link rel="icon" href="/img/icons/icon.svg">
+    <link rel="stylesheet" href="/styles/typographics.css">
+    <link rel="stylesheet" href="/styles/forum/header.css">
+    <link rel="stylesheet" href="/styles/forum/main.css">
+</head>
+<body>
+<header>
+    <div class="navigation">
+        <img class="logo" src="/img/icons/logo-white.svg">
+        <nav>
+            <a href="http://localhost:8010/home">Главная</a>
+            <a href="http://localhost:8010/forum">Форум</a>
+            <div class="dropdown">
+                <button class="account">
+                    <img id="avatar" class="avatar" src="/img/icons/default-avatar.svg">
+                    <img class="inverted-triangle" src="/img/icons/inverted-triangle-white.svg">
+                </button>
+                <div id="dropdown-content" class="dropdown-content">
+                    <a class="dropdown-content-link" href="http://localhost:8010/settings"><img class="settings" src="/img/icons/settings.svg">Настройки</a>
+                    <a class="dropdown-content-link" href="http://localhost:8010/exit"><img class="exit" src="/img/icons/exit.svg">Выйти</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="text">
+            <h1>Форум</h1>
+            <p>Делитесь опытом своих путешествий и полезными советами здесь.</p>
+        </div>
+        <img class="content-img" src="/img/illustrations/forum.svg">
+    </div>
+</header>
+<aside>
+    <button class="new-post" onclick="redirectToAddPage()">+ Новый пост</button>
+    <form class="radio_btn">
+        <div class="form_radio_btn">
+            <input onchange="getValue(this)" type="radio" id="all" name="post" value="all" checked/>
+            <label for="all">Все Travel+ посты</label>
+            <img class="black" src="/img/icons/all-posts.svg">
+            <img class="grey" src="/img/icons/all-posts-grey.svg">
+        </div>
+        <div class="form_radio_btn">
+            <input onchange="getValue(this)" type="radio" id="my" name="post" value="my"/>
+            <label for="my">Мои посты</label>
+            <img class="black" src="/img/icons/my-posts-black.svg">
+            <img class="grey" src="/img/icons/my-posts.svg">
+        </div>
+    </form>
+    <hr>
+    <form class="tags">
+        <h2>Тэги</h2>
+        <div class="regions">
+            <h3>Регионы</h3>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Australia" name="Australia" />
+                <label for="Australia">Австралия</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Asia" name="Asia" />
+                <label for="Asia">Азия</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="America" name="America" />
+                <label for="America">Америка</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Antarctica" name="Antarctica" />
+                <label for="Antarctica">Антарктида</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Africa" name="Africa"/>
+                <label for="Africa">Африка</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Europe" name="Europe" />
+                <label for="Europe">Европа</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+        </div>
+        <div class="see-another" onclick="toggleElement()">Показать больше ❯</div>
+        <div class="sightseeing">
+            <h3>Назначение места</h3>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Market" name="Market" />
+                <label for="Market">Магазины</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Locals" name="Locals" />
+                <label for="Locals">Местная культура</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Museum" name="Museum" />
+                <label for="Museum">Музеи</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Island" name="Island" />
+                <label for="Island">Острова</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Monument" name="Monument"/>
+                <label for="Monument">Памятники</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Nature" name="Nature" />
+                <label for="Nature">Природа</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Church" name="Church" />
+                <label for="Church">Церковь</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Adventure" name="Adventure" />
+                <label for="Adventure">Экстрим</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+        </div>
+        <div class="other">
+            <h3>Другое</h3>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Activity" name="Activity"/>
+                <label for="Activity">Активности</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Food" name="Food" />
+                <label for="Food">Еда</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Art" name="Art" />
+                <label for="Art">Исскуство и культура</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Advice" name="Advice" />
+                <label for="Advice">Советы</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+            <div class="checkbox-btn">
+                <input class="tagCheckbox" type="checkbox" id="Shopping" name="Shopping"/>
+                <label for="Shopping">Шоппинг</label>
+                <img class="tag-img" src="/img/icons/tag-img.svg">
+            </div>
+        </div>
+    </form>
+</aside>
+<main>
+        <template class="post-shablon">
+            <li class="post">
+            <img class="avatar" src="/img/icons/default-avatar.svg">
+            <div class="post-content">
+                <div class="main-info">
+                    <div class="userTime">
+                    <div class="post-name">Jane Doe</div>
+                    <div class="post-time">4 minutes ago</div>
+                    </div>
+                </div>
+                <h4 class="post-title" id="post-title" onclick="redirectToPost(event)">Title</h4>
+                <p class="post-text">С другой стороны, дальнейшее развитие различных форм деятельности напрямую зависит от поэтапного и последовательного развития общества. В целом, конечно, реализация намеченных плановых заданий предполагает независимые способы...</p>
+                <div class="post-tags">
+                </div>
+            </div>
+            </li>
+        </template>
+    <div class="posts-container">
+        <ul class="posts"></ul>
+    </div>
+</main>
+<script src="/scripts/forum/radiobutton.js"></script>
+<script src="/scripts/forum/forum.js"></script>
+</body>
+</html>

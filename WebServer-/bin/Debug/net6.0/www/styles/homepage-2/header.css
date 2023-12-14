@@ -1,0 +1,43 @@
+
+a{
+    font-family: Axiforma;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.25vw;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+a:hover{
+    font-weight: normal;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+header{
+    margin: 3.61vw 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account{
+    display: flex;
+    gap: 0.5vw;
+    background: transparent;
+    border: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.signin{
+    border: white 2px solid;
+}
+.signup{
+    border: none;
+}
+

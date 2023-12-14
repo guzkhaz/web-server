@@ -1,0 +1,234 @@
+body{
+    background-color: #EEF2F6;
+    font-family: Axiforma;
+}
+
+aside{
+    width: 17.15vw;
+    margin: 2vw 5vw 0 10vw;
+}
+.new-post{
+    margin: 1.56vw 0;
+    font-family: Axiforma;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    width: 17.15vw;
+    height: 3.19vw;
+    background-color: #5EA8FF;;
+    border-radius: 10px;
+    font-size: 1.25vw;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+.form_radio_btn{
+    background-color: rgb(255, 255, 255, 45%);
+    height: 2.50vw;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    padding: 0 0 0 2vw;
+    justify-content: space-between;
+    font-family: Axiforma;
+    font-size: 0.97vw;
+    font-weight: 600;
+    color: #999999;
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+
+.form_radio_btn input[type=radio]:checked + label {
+    color: #4F4F4F;
+}
+
+.form_radio_btn input[type=radio]:checked + label {
+    color: #4F4F4F;
+}
+.grey{
+    display: block;
+    padding-right: 2vw;
+    width: 1.39vw;
+    height: 1.39vw;
+}
+.black{
+    padding-right: 2vw;
+    display: none;
+    width: 1.39vw;
+    height: 1.39vw;
+}
+.form_radio_btn input[type=radio]:checked ~ .grey{
+    display: none
+}
+.form_radio_btn input[type=radio]:checked ~ .black{
+    display: block;
+}
+.radio_btn{
+    display: grid;
+    gap: 1vw;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #E0E0E0;
+}
+
+.tags{
+    color: #999999;
+    padding: 1vw;
+    font-weight: 400;
+    display: grid;
+    gap: 0.5vw;
+}
+
+h2{
+    font-size: 1.7vw;
+    color: black;
+    margin: 0;
+}
+
+h3{
+    margin: 0;
+    font-size: 1.25vw;
+    font-weight: 600;
+    color: #718096;
+}
+.checkbox-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw;
+}
+.tag-img{
+    display: none;
+    width: 0.97vw;
+    height: 0.97vw;
+}
+.checkbox-btn input[type=checkbox]:checked ~ .tag-img{
+    display: block;
+}
+.checkbox-btn input[type=checkbox] {
+    display: none;
+}
+
+.checkbox-btn input[type=checkbox]:checked + label {
+    color: #4F4F4F;
+}
+.see-another{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    color: #C4C4C4;
+}
+aside{
+    position: absolute;
+}
+.post{
+    padding: 1.5vw 1.8vw;
+    margin: 2vw 0 0 30%;
+    display: flex;
+    gap: 1.5vw;
+    width: 52.08vw;
+    height: 13.61vw;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: #E0E0E0 1px solid;
+}
+.post-content{
+    display: grid;
+    width: 45vw;
+}
+.main-info{
+    margin-top: 0.5vw;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.userTime{
+    display: flex;
+    align-items: center;
+}
+.post-time{
+    color: #707070;
+    font-size: 0.90vw;
+    font-weight: normal;
+    margin-left: 1vw;
+}
+.post-name{
+    color: #2A2B2C;
+    font-weight: 400;
+    font-size: 1.11vw;
+}
+.like{
+    font-family: Axiforma;
+    font-size: 0.97vw;
+    font-weight: 400;
+    color: #707070;
+    display: flex;
+    gap: 0.5vw;
+    margin-left: 23vw;
+    border: none;
+    background: none;
+    align-items: center;
+}
+.comment{
+    align-items: center;
+    font-family: Axiforma;
+    font-size: 0.97vw;
+    font-weight: 400;
+    color: #707070;
+    margin-left: 2vw;
+    display: flex;
+    gap: 0.5vw;
+    border: none;
+    background: none;
+}
+.icons{
+    width: 1.11vw;
+    height: 1.11vw;
+}
+h4{
+    margin: 0;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.97vw;
+}
+.post-text{
+    align-items: center;
+    margin: 0;
+    color: #707070;
+    font-weight: 400;
+    font-size: 0.90vw;
+}
+
+.post-tags{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.tag{
+    padding: 0.2vw 2vw;
+    font-size: 0.83vw;
+    font-weight: 400;
+    font-style: italic;
+    color: #575673;
+    border-radius: 4px;
+    line-height: 1.46vw;
+    vertical-align: center;
+    height: 1.46vw;
+}
+
+#first-tag{
+    background-color: #C1C0FF;
+}
+#second-tag{
+    background-color: darkseagreen;
+}

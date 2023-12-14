@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/settings/header.css">
+    <link rel="stylesheet" href="/styles/settings/main.css">
+    <link rel="stylesheet" href="/styles/typographics.css">
+    <link rel="icon" href="/img/icons/icon.svg">
+    <title>Настройки</title>
+</head>
+<body>
+<header>
+    <img class="logo" src="/img/icons/logo-total-black.svg">
+    <nav>
+        <a href="http://localhost:8010/home">Главная</a>
+        <a href="http://localhost:8010/forum">Форум</a>
+        <div class="dropdown">
+            <button class="account">
+                <img id="avatar-1" class="avatar-1" src="/img/icons/default-avatar.svg">
+                <img class="inverted-triangle" src="/img/icons/inverted-triangle-black.svg">
+            </button>
+            <div id="dropdown-content" class="dropdown-content">
+                <a class="dropdown-content-link" href="http://localhost:8010/settings"><img class="settings" src="/img/icons/settings.svg">Настройки</a>
+                <a class="dropdown-content-link" href="http://localhost:8010/exit"><img class="exit" src="/img/icons/exit.svg">Выйти</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <h3>Настройки</h3>
+    <p>Отредайтируйте свой профиль здесь.</p>
+    <form id="edit-form">
+        <div class="avatar">
+            <div class="enter file">
+                <label>Загрузите фото профиля</label>
+                <button class="photo"><img class="load" id="avatar" src="/img/icons/file-export.svg"><input class="path" type="file"></button>
+            </div>
+        </div>
+        <div class="full-name">
+            <div class="enter name">
+                <label class>Имя</label>
+                <input class="name" id="name"
+                       name="name" pattern="[А-ЯA-Z][а-яА-ЯёЁa-zA-Z]{1,19}"
+                       title="Фамилия должна содержать от 2 до 20 символов, без цифр и специальных символов. Первая буква заглавная">
+            </div>
+            <div class="enter name">
+                <label>Фамилия</label>
+                <input class="name" id="surname"
+                       name="surname" pattern="[А-ЯA-Z][а-яА-ЯёЁa-zA-Z]{1,19}"
+                       title="Фамилия должна содержать от 2 до 20 символов, без цифр и специальных символов. Первая буква заглавная">
+            </div>
+        </div>
+        <div class="enter">
+            <label>Место жительства</label>
+            <input name="location" id="location" pattern="[А-ЯA-Z][а-яА-ЯёЁa-zA-Z]{1,19}"
+                   title="Название города должно содержать от 2 до 20 символов, без цифр и специальных символов. Первая буква заглавная">
+        </div>
+        <hr>
+    </form>
+    <div class="delete">
+        <div class="delete-text">
+            <label>Удалить аккаунт</label>
+            <p>Удалите свой аккаунт и все его данные</p>
+        </div>
+        <button class="delete-btn">Удалить аккаунт</button>
+    </div>
+    <button class="save">Сохранить изменения</button>
+</main>
+<script src="/scripts/settings/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Новый пост</title>
+    <link rel="icon" href="/img/icons/icon.svg">
+    <link rel="stylesheet" href="../styles/typographics.css">
+    <link rel="stylesheet" href="/styles/forum/header.css">
+    <link rel="stylesheet" href="/styles/forum/add-main.css">
+</head>
+<body>
+<header>
+    <div class="navigation">
+        <img class="logo" src="/img/icons/logo-white.svg">
+        <nav>
+            <a href="http://localhost:8010/home">Главная</a>
+            <a href="http://localhost:8010/forum">Форум</a>
+            <div class="dropdown">
+                <button class="account">
+                    <img id="avatar" class="avatar" src="/img/icons/default-avatar.svg">
+                    <img class="inverted-triangle" src="/img/icons/inverted-triangle-white.svg">
+                </button>
+                <div id="dropdown-content" class="dropdown-content">
+                    <a class="dropdown-content-link" href="http://localhost:8010/settings"><img class="settings" src="/img/icons/settings.svg">Настройки</a>
+                    <a class="dropdown-content-link" href="http://localhost:8010/exit"><img class="exit" src="/img/icons/exit.svg">Выйти</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="text">
+            <h1>Форум</h1>
+            <p>Делитесь опытом своих путешествий и полезными советами здесь.</p>
+        </div>
+        <img class="content-img" src="/img/illustrations/forum.svg">
+    </div>
+</header>
+<main>
+    <a href="http://localhost:8010/forum" class="back">❮ Назад</a>
+    <h2>Создайте пост</h2>
+    <form id="post-form">
+        <div>
+        <h3 >Название</h3>
+        <input type="text"  class="title" id="title" name="title" required>
+        </div>
+        <div>
+        <h3>Категории</h3>
+            <div class="border">
+                <select id="selectElement" class="select-type" multiple>
+                    <optgroup label="Регионы">
+                        <option value="Australia">Авcтралия</option>
+                        <option value="Asia">Азия</option>
+                        <option value="America">Америка</option>
+                        <option value="Antarctica">Антарктида</option>
+                        <option value="Africa">Африка</option>
+                        <option value="Europe">Европа</option>
+                    </optgroup>
+                    <optgroup label="Назначение места">
+                        <option value="Market">Магазины</option>
+                        <option value="Locals">Местная культура</option>
+                        <option value="Museum">Музеи</option>
+                        <option value="Island">Острова</option>
+                        <option value="Monument">Памятники</option>
+                        <option value="Nature">Природа</option>
+                        <option value="Church">Церковь</option>
+                        <option value="Adventure">Экстрим</option>
+                    </optgroup>
+                    <optgroup label="Другое">
+                        <option value="Activity">Активности</option>
+                        <option value="Food">Еда</option>
+                        <option value="Art">Исскуство и культура</option>
+                        <option value="Advice">Советы</option>
+                        <option value="Shopping">Шоппинг</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+        <div>
+        <h3>Содержание</h3>
+            <textarea class="post-content" name="content" required></textarea>
+        </div>
+        <div class="post-photos">
+            <button class="photo" id="photo-1"><img class="load-1" id="load-1" src="/img/icons/file-export.svg"><input class="path" id="path-1" type="file"></button>
+            <button class="photo" id="photo-2"><img class="load-1" id="load-2" src="/img/icons/file-export.svg"><input class="path" id="path-2" type="file"></button>
+            <button class="photo" id="photo-3"><img class="load-1" id="load-3" src="/img/icons/file-export.svg"><input class="path" id="path-3" type="file"></button>
+            <button class="photo" id="photo-4"><img class="load-1" id="load-4" src="/img/icons/file-export.svg"><input class="path" id="path-4" type="file"></button>
+            <button class="photo" id="photo-5"><img class="load-1" id="load-5" src="/img/icons/file-export.svg"><input class="path" id="path-5" type="file"></button>
+            <button class="photo" id="photo-6"><img class="load-1" id="load-6" src="/img/icons/file-export.svg"><input class="path" id="path-6" type="file"></button>
+            <button class="photo" id="photo-7"><img class="load-1" id="load-7" src="/img/icons/file-export.svg"><input class="path" id="path-7" type="file"></button>
+            <button class="photo" id="photo-8"><img class="load-1" id="load-8" src="/img/icons/file-export.svg"><input class="path" id="path-8" type="file"></button>
+            <button class="photo" id="photo-9"><img class="load-1" id="load-9" src="/img/icons/file-export.svg"><input class="path" id="path-9" type="file"></button>
+            <button class="reset" onclick="deletePhotos">✖</button>
+        </div>
+        <button class="publish">Опубликовать</button>
+    </form>
+</main>
+<script src="/scripts/forum/forum-add.js"></script>
+</body>
+</html>

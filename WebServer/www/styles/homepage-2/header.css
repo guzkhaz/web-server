@@ -1,0 +1,94 @@
+.logo{
+    width: 11.11vw;
+    height: 2.78vw;
+}
+.exit{
+    width: 0.83vw;
+    height: 1.04vw;
+}
+.settings{
+    width: 0.97vw;
+    height: 0.97vw;
+}
+.avatar{
+    width: 3.47vw;
+    height: 3.47vw;
+}
+.inverted-triangle{
+    width: 1.04vw;
+    height: 0.83vw;
+}
+.dropdown-content-link{
+    color: #263238;
+    font-size: 0.97vw;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin: 0 1.39vw;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content-link:hover{
+    font-weight: 500;
+}
+.dropdown:hover .dropdown-content{
+    display: grid;
+}
+#avatar{
+    border-radius: 50%;
+    border: white solid 1px;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    padding: 1vw 0;
+    gap: 1vw;
+    background-color: white;
+    border-radius: 10px;
+    width: 12.50vw;
+    color: #263238;
+    border: #E0E0E0 1px solid;
+}
+a{
+    font-family: Axiforma;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.25vw;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+a:hover{
+    font-weight: normal;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+header{
+    margin: 3.61vw 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account{
+    display: flex;
+    gap: 0.5vw;
+    background: transparent;
+    border: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.signin{
+    border: white 2px solid;
+}
+.signup{
+    border: none;
+}
+

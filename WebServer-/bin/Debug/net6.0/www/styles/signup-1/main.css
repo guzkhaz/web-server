@@ -1,0 +1,98 @@
+main{
+    font-family: Axiforma;
+    display: flex;
+}
+.info{
+    width: 35%;
+    padding: 3.75vw 3.65vw;
+    background-color: #A5DDEA;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.35vw;
+    box-sizing: border-box;
+    display: block;
+}
+.logo{
+    width: 11.11vw;
+    height: 2.78vw;
+}
+.illustration{
+    width: 27.34vw;
+    height: 18.23vw;
+    margin-top: 7vw;
+}
+p{
+    color: rgba(0, 0, 0, 0.55);
+    margin-top: 4.17vw;
+}
+
+.signup{
+    width: 65%;
+}
+.login{
+    font-size: 0.73vw;
+    font-weight: 500;
+    color: #707070;
+    margin: 1.15vw 1.04vw 12vw 1.04vw;
+    text-align: end;
+}
+a{
+    color: #5EA8FF;
+    text-decoration: none;
+}
+
+form{
+    width: 21.67vw;
+    margin: auto;
+    display: grid;
+    gap: 1.2vw;
+}
+.full-name{
+    width: 21.67vw;
+    display: flex;
+    gap: 0.83vw;
+}
+.name{
+    width: 10.4vw;
+}
+label{
+    font-size: 0.94vw;
+    font-weight: 600;
+}
+input{
+    padding: unset;
+    width: 21.67vw;
+    height: 2.08vw;
+    background-color: #EFEFEF;
+    border: none;
+    border-radius: 10px;
+}
+button{
+    font-family: Axiforma;
+    color: white;
+    background-color: #5EA8FF;
+    font-size: 0.94vw;
+    font-weight: bold;
+    width: 21.67vw;
+    height: 2.40vw;
+    border: none;
+    border-radius: 10px;
+}
+.enter{
+    display: grid;
+}
+h2{
+    font-size: 1.56vw;
+    margin: 0;
+}
+hr{
+    border: none;
+    border-top: 1px solid #E0E0E0;
+    margin: 0;
+}
+.indicator{
+    display: grid;
+}
+.password{
+    text-align: center;
+}

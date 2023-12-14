@@ -1,0 +1,36 @@
+body{
+    background: url(/img/illustrations/homepage-1.svg) no-repeat;
+    background-size: cover;
+    font-family: Axiforma;
+}
+
+main{
+    margin: 4.86vw 7vw;
+    font-family: Axiforma;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    font-size: 2vw;
+    width: 40vw;
+}
+
+span{
+    color: #5295E2;
+}
+
+.start{
+    margin: 1.56vw 0;
+    font-family: Axiforma;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    width: 13.19vw;
+    height: 3.19vw;
+    background-color: #5295E2;;
+    border-radius: 10px;
+    font-size: 1.25vw;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+

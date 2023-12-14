@@ -1,0 +1,21 @@
+body{
+    background: url("/img/illustrations/homepage-2.svg") no-repeat;
+    background-size: cover;
+    font-family: Axiforma;
+}
+
+main{
+    color: white;
+    margin: 9vw 7vw;
+
+}
+p{
+    font-size: 3vw;
+    font-weight: 500;
+    margin: 0;
+}
+span{
+    font-size: 3.8vw;
+    font-weight: 700;
+    font-family: Axiforma;
+}

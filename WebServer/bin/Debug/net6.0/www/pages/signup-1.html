@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/signup-1/main.css">
+    <link rel="stylesheet" href="/styles/typographics.css">
+    <link rel="icon" href="/img/icons/icon.svg">
+    <title>Регистрация</title>
+</head>
+<body>
+<main>
+    <article class="info">
+        <img class="logo" src="/img/icons/logo-black.svg">
+        <p>Путешествуйте по республике и делитесь своими впечатлениями с другими пользователями</p>
+        <img class="illustration" src="/img/illustrations/signup.svg">
+    </article>
+    <article class="signup">
+        <div class="login">Уже есть аккаунт? <a href="http://localhost:8010/signin">Войдите</a></div>
+        <form id="signup-form">
+            <h2>Регистрация<hr></h2>
+            <div class="full-name">
+                <div class="enter name">
+                        <label>Имя</label>
+                        <input type="text" name="name" class="name" id="name" required pattern="[А-ЯA-Z][а-яА-ЯёЁa-zA-Z]{1,19}"
+                               title="Имя должно содержать от 2 до 20 символов, без цифр и специальных символов. Первая буква заглавная">
+                </div>
+                <div class="enter name">
+                        <label>Фамилия</label>
+                        <input type="text" name="surname" class="name" id="surname" required pattern="[А-ЯA-Z][а-яА-ЯёЁa-zA-Z]{1,19}"
+                               title="Фамилия должна содержать от 2 до 20 символов, без цифр и специальных символов. Первая буква заглавная">
+                </div>
+            </div>
+            <div class="enter">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" required pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"
+                    title="Почта должна быть представлена в формате вида login@example.com">
+            </div>
+            <div class="enter">
+                    <label>Пароль</label>
+                    <input type="password" name="password" id="password" required pattern="(?=.*[\W_])(?=.*\d)(?=.*[a-zа-я])(?=.*[A-ZА-Я]).{8,16}"
+                    title="Пароль должен содержать от 8 до 16 символов и состоять, по крайней мере, из одного числа,
+                     одной прописной и одной строчной букв и специального символа">
+            </div>
+            <button>Зарегистрироваться</button>
+        </form>
+    </article>
+</main>
+<script src="/scripts/signup-1/main.js"></script>
+</body>
+</html>

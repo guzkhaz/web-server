@@ -1,0 +1,25 @@
+.block{
+    margin-top: 8vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    font-family: Axiforma;
+    color: #5F5F5F;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h3{
+    margin: 1vw;
+    font-size: 1.81vw;
+    font-weight: 800;
+}
+p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.11vw;
+}

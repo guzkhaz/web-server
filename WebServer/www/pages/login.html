@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/login/main.css">
+    <link rel="stylesheet" href="/styles/typographics.css">
+    <link rel="icon" href="/img/icons/icon.svg">
+    <title>Вход</title>
+</head>
+<body>
+<main>
+    <article class="info">
+        <img class="logo" src="/img/icons/logo-black.svg">
+        <p>Путешествуйте по республике и делитесь своими впечатлениями с другими пользователями</p>
+        <img class="illustration" src="/img/illustrations/login.svg">
+    </article>
+    <article class="login">
+        <div class="signup">Нет аккаунта? <a href="http://localhost:8010/signup-1">Зарегистрируйтесь</a></div>
+        <form id="login-form">
+            <h2>Вход<hr></h2>
+            <div class="enter">
+                <label>Логин</label>
+                <input name="email" type="email" required pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"
+                       title="Почта должна быть представлена в формате вида login@example.com">
+            </div>
+            <div class="enter">
+                <label>Пароль</label>
+                <input name="password" type="password" required pattern="(?=.*[\W_])(?=.*\d)(?=.*[a-zа-я])(?=.*[A-ZА-Я]).{8,16}"
+                       title="Пароль должен содержать от 8 до 16 символов и состоять, по крайней мере, из одного числа,
+                     одной прописной и одной строчной букв и специального символа">
+            </div>
+            <button>Войти</button>
+        </form>
+    </article>
+</main>
+<script src="/scripts/login/main.js"></script>
+</body>
+</html>

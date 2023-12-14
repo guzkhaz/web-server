@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/img/icons/icon.svg">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/styles/typographics.css">
+    <link rel="stylesheet" href="/styles/homepage-2/main.css">
+    <link rel="stylesheet" href="/styles/homepage-2/header.css">
+</head>
+<body>
+<header>
+    <img class="logo" src="/img/icons/logo-white.svg">
+    <nav>
+        <a href="http://localhost:8010/home">Главная</a>
+        <a href="http://localhost:8010/forum">Форум</a>
+        <div class="dropdown">
+            <button class="account">
+                <img id="avatar" class="avatar" src="/img/icons/default-avatar.svg">
+                <img class="inverted-triangle" src="/img/icons/inverted-triangle-white.svg">
+            </button>
+            <div id="dropdown-content" class="dropdown-content">
+                <a class="dropdown-content-link" href="http://localhost:8010/settings"><img class="settings" src="/img/icons/settings.svg">Настройки</a>
+                <a class="dropdown-content-link" href="http://localhost:8010/exit"><img class="exit" src="/img/icons/exit.svg">Выйти</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <p>С возвращением,</p>
+    <span id="name">Пользователь!</span>
+</main>
+<script src="/scripts/homepage-2/main.js"></script>
+</body>
+</html>

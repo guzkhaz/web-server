@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Пост</title>
+    <link rel="icon" href="/img/icons/icon.svg">
+    <link rel="stylesheet" href="/styles/typographics.css">
+    <link rel="stylesheet" href="/styles/forum/header.css">
+    <link rel="stylesheet" href="/styles/forum/item-main.css">
+</head>
+<body>
+<header>
+    <div class="navigation">
+        <img class="logo" src="/img/icons/logo-white.svg">
+        <nav>
+            <a href="http://localhost:8010/home">Главная</a>
+            <a href="http://localhost:8010/forum">Форум</a>
+            <div class="dropdown">
+                <button class="account">
+                    <img id="avatar" class="avatar" src="/img/icons/default-avatar.svg">
+                    <img class="inverted-triangle" src="/img/icons/inverted-triangle-white.svg">
+                </button>
+                <div id="dropdown-content" class="dropdown-content">
+                    <a class="dropdown-content-link" href="http://localhost:8010/settings"><img class="settings" src="/img/icons/settings.svg">Настройки</a>
+                    <a class="dropdown-content-link" href="http://localhost:8010/exit"><img class="exit" src="/img/icons/exit.svg">Выйти</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <a href="http://localhost:8010/forum" class="back">❮ Назад</a>
+    <div class="post">
+        <img class="post-avatar" src="/img/icons/default-avatar.svg">
+        <div class="post-content">
+            <div class="main-info">
+                <div class="userTime">
+                    <div class="post-name">Jane Doe</div>
+                    <div class="post-time">4 minutes ago</div>
+                </div>
+            </div>
+            <h4 class="post-title" id="post-title" onclick="redirectToPost(event)">Title</h4>
+            <div class="post-tags"></div>
+            <div class="post-images"></div>
+            <p class="post-text">С другой стороны, дальнейшее развитие различных форм деятельности напрямую...</p>
+        </div>
+    </div>
+    <div class="comments">
+        <h2 class="comments-title">Комментарии</h2>
+        <div class="add-comment">
+            <form class="comment-form">
+                <div class="enter-comment">
+                    <img class="avatar" id="avatar-comment" src="/img/icons/default-avatar.svg">
+                    <textarea name="content"></textarea>
+                 </div>
+                <button class="add-comment-btn">Отправить</button>
+            </form>
+        </div>
+        <template class="comment-shablon">
+            <li class="comment">
+            <img class="comment-avatar" src="/img/icons/default-avatar.svg">
+            <div class="comment-content">
+                <div class="main-info-comment">
+                    <div class="comment-name">Jane Doe</div>
+                    <div class="comment-time">4 minutes ago</div>
+                </div>
+                <p class="comment-text">С другой стороны, дальнейшее развитие различных форм деятельности напрямую зависит от поэтапного и последовательного развития общества. В целом, конечно, реализация намеченных плановых заданий предполагает независимые способы...</p>
+            </div>
+            </li>
+        </template>
+            <ul class="comments-container"></ul>
+    </div>
+</main>
+<script src="/scripts/forum/forum-item.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+img{
+    width: 11.11vw;
+    height: 2.78vw;
+}
+a{
+    font-family: Axiforma;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.25vw;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+a:hover{
+    font-weight: normal;
+}
+button{
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+header{
+    margin: 3.61vw 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.log{
+    display: flex;
+    gap: 1.6vw;
+}
+
+.log-btn{
+    width: 7.15vw;
+    height: 2.64vw;
+    background-color: rgba(255,255,255,0.25);;
+    border-radius: 20px;
+    font-family: Axiforma;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.11vw;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.signin{
+    border: white 2px solid;
+}
+.signup{
+    border: none;
+}
